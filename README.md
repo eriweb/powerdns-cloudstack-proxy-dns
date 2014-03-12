@@ -28,6 +28,8 @@ normally would, as that's outside the scope of this script.
 launch=bind,lua
 lua-filename=/etc/pdns/cloudstack-dns.lua
 ```
+4. In cloudstack-dns.lua, specify the domain variable. This will be 
+configurable from pdns.conf once that works, but is hard coded as a workaround
 
 Testing
 =======
