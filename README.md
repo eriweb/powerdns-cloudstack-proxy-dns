@@ -20,11 +20,11 @@ read it. Ie. in your /etc/pdns folder.
 Configuration
 =============
 
-In your pdns.conf, add lua to launch after your existing backends.
-If this is a dedicated domain, you have to provide NS and SOA records as you
+1. In your pdns.conf, add lua to launch after your existing backends.
+2. If this is a dedicated domain, you have to provide NS and SOA records as you
 normally would, as that's outside the scope of this script.
 
-If you are using the bind backend, your pdns.conf should look like this:
+3. If you are using the bind backend, your pdns.conf should look like this:
 ```
 launch=bind,lua
 lua-filename=/etc/pdns/cloudstack-dns.lua
