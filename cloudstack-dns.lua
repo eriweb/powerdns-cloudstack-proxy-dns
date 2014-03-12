@@ -1,4 +1,4 @@
-logger(log_error,"cloudstack-dns.lua starting")
+logger(log_info,"cloudstack-dns.lua starting")
 
 -- TODO: eventually we should support getting our domain name from pdns.conf
 -- but for some reason it doesn't work..
@@ -7,7 +7,7 @@ logger(log_error,"cloudstack-dns.lua starting")
 domain = "realhostip.com"
 
 if domain == nil or domain == "" then
-  logger(log_error,"cloudstack-dns.lua is missing the domain parameter in pdns.conf")
+  logger(log_info,"cloudstack-dns.lua is missing the domain parameter in pdns.conf")
 end
 local res = {}
 
