@@ -16,7 +16,6 @@ something like `yum install pdns-backend-lua`
 read it. Ie. in your /etc/pdns folder.
 
 
-
 Configuration
 =============
 
@@ -30,4 +29,10 @@ launch=bind,lua
 lua-filename=/etc/pdns/cloudstack-dns.lua
 ```
 
+Testing
+=======
 
+```
+[vagrant@pdns ~]$ dig +short 1-2-3-4.realhostip.com @localhost
+1.2.3.4
+```
