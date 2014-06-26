@@ -31,7 +31,7 @@ function lookup(qtype,qname,domain_id)
         domain_id = domain_id,
         name      = qname,
         type      = 'A',
-        ttl       = 3600,
+        ttl       = 86400,
         content   = ip
       }
       -- TODO: preferably we should return the calculated length of res
